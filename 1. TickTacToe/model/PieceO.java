@@ -1,7 +1,7 @@
 package model;
 
 public class PieceO extends PlayingPiece {
-    PieceO(){
+    public PieceO(){
         super(PieceType.O);
     }
 }

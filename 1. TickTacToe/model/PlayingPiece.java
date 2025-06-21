@@ -1,7 +1,7 @@
 package model;
 
 public class PlayingPiece {
-    PieceType type;
+    public PieceType type;
     PlayingPiece(PieceType type){
         this.type=type;
     }

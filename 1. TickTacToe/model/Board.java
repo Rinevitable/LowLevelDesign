@@ -4,15 +4,14 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Board {
-    int size;
-    PlayingPiece[][] board;
-    List<Player>players;
-    Board(int size,List<Player> players){
+    public int size;
+    public PlayingPiece[][] board;
+    public Board(int size){
         this.size=size;
-        board=new PlayingPiece[size][size];
+        board = new PlayingPiece[size][size];
     }
 
-    public boolean setPiece(int row , int col , PlayingPiece p) {
+    public boolean setPiece(Integer row , Integer col , PlayingPiece p) {
         if(board[row][col]!=null){
             System.out.println("Can't doo");
             return false;
@@ -38,10 +37,9 @@ public class Board {
         for(int i =0 ;i<size;i++){
             for(int j=0;j<size;j++){
                 if(board[i][j]!=null){
-                    System.out.print(board[i][j].type + " ");
-                    System.out.print(board[i][j].type + "   ");
+                    System.out.print(board[i][j].type.name() + " ");
                 }else{
-                    System.out.print("   ");
+                    System.out.print("  ");
                 }
             }
             System.out.println();

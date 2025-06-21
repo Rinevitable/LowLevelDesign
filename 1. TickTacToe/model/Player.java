@@ -2,8 +2,8 @@ package model;
 
 public class Player {
     String name;
-    PieceType playingPiece;
-    Player(String name, PieceType playingPiece){
+    PlayingPiece playingPiece;
+    public Player(String name, PlayingPiece playingPiece){
         this.name=name;
         this.playingPiece=playingPiece;
     }
@@ -12,7 +12,7 @@ public class Player {
         return name;
     }
 
-    public PieceType getPlayingPiece() {
+    public PlayingPiece getPlayingPiece() {
         return playingPiece;
     }
 
@@ -20,7 +20,7 @@ public class Player {
         this.name = name;
     }
 
-    public void setPlayingPiece(PieceType playingPiece) {
+    public void setPlayingPiece(PlayingPiece playingPiece) {
         this.playingPiece = playingPiece;
     }
 }
