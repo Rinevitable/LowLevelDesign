@@ -20,7 +20,7 @@ public class ElevatorController {
     //methods
 
     public void submitExternalReq(int floor, Direction dir) {
-        if (dir == Direction.Down) {
+        if (dir == Direction.DOWN) {
             downMaxPQ.offer(floor);
         } else {
             //up

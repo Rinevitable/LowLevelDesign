@@ -13,6 +13,6 @@ public class Floor {
 
     public void pressButton(Direction dir) {
 //        System.out.println("External Button pressed on "+floorId+" direction : "+dir);
-        extDispatcher.
+        extDispatcher.submitExternalRequest(floorId,dir);
     }
 }

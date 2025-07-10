@@ -44,7 +44,7 @@ public class Elevator {
             }
         }
 
-        if (dir == Direction.Down) {
+        if (dir == Direction.DOWN) {
             for (int i = startFloor; i >= destinationFloor; i--) {
 
                 this.currentFloor = startFloor;
